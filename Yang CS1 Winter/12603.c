@@ -11,18 +11,20 @@ int main() {
     
     scanf("%d", &n);
     scanf("%s", d);
-    for (int i = 0; i < n; ++i)
-    {
+
+    for (int i = 0; i < n; ++i) {
         scanf("%d", &p);
 
-        if (d[i] == 'R')
-        {
+        if (d[i] == 'R') {
             l = p;
             continue;
         }
-        if (l != -1)
+
+        if (l != -1) {
             time = min(time, (p - l) / 2);
+        }
     }
+
     printf("%d\n", time == inf ? -1 : time);
 
     return 0;

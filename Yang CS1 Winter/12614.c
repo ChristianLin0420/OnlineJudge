@@ -22,3 +22,5 @@ int main() {
     printf("%d\n", tobuy);
     return 0;
 }
+
+// finished
