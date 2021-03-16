@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 char r[110][110];
-char as[13] = "ICPCASIASG";    // 先建一個我要的陣列
+char as[13] = "ICPCASIASG";    
 int n, flag;                   
 
 void rec(int now, int prog) {   // now: current position 
@@ -12,7 +12,7 @@ void rec(int now, int prog) {   // now: current position
     }
 
     for(int i = -2; i <= 2 && !flag; i++)  {            // vertical
-        for(int j =- 2; j <= 2 && !flag; j++) {         // horizontal
+        for(int j = -2; j <= 2 && !flag; j++) {         // horizontal
             // if displacement is illegal, then continue
             if( j * j + i * i != 5 || now / n + i < 0 || now / n + i >= n || now % n + j < 0 || now % n + j >= n ) continue;
                 
@@ -32,7 +32,7 @@ int main() {
             scanf("%c", &r[i][j]);
 
     flag = 0;
-    int cnt =- 1;
+    int cnt = -1;
      
     while(cnt < n * n && !flag) {
         cnt++;

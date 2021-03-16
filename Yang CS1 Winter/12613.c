@@ -2,6 +2,7 @@
 #include <math.h>
 
 int main() {
+    
     int T,a,b;
     scanf("%d", &T);
 
@@ -12,3 +13,4 @@ int main() {
 
     return 0;
 }
+
