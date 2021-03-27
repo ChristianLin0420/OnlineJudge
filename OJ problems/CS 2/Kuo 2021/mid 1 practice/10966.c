@@ -38,5 +38,4 @@ BTNode* makeNode(char c) {
     temp -> left = NULL;
     temp -> right = NULL;
     return temp;
-    
 }
